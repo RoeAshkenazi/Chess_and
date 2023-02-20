@@ -1,0 +1,115 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    tools:context=".GameActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="0dp"/>
+
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginVertical="@dimen/fab_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:minHeight="0dp"
+            android:text="Online Chess Game"
+            android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/horBar1"
+        android:orientation="horizontal"
+        android:paddingTop="25dp"
+        android:paddingBottom="2dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title">
+
+        <Button
+            android:background="@drawable/button_selector"
+            android:id="@+id/online_create_game"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/arvo"
+            android:text="crate game"
+            android:textSize="25sp" />
+        <Button
+            android:background="@drawable/button_selector"
+            android:id="@+id/online_join"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/arvo"
+            android:text="join game"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/horBar2"
+        android:orientation="horizontal"
+        android:paddingTop="25dp"
+        android:paddingBottom="2dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title">
+
+        <TextView
+            android:id="@+id/online_txt_generate_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginVertical="@dimen/fab_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:minHeight="0dp"
+            android:text="Online Chess Game"
+            android:textSize="20sp"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:id="@+id/online_etxt_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="6"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/arvo"
+            android:text="enter key"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/horBar3"
+        android:orientation="horizontal"
+        android:paddingTop="25dp"
+        android:paddingBottom="2dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title">
+
+        <Button
+            android:background="@drawable/button_selector"
+            android:id="@+id/online_Start"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/arvo"
+            android:text="start game"
+            android:textSize="25sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</LinearLayout>
